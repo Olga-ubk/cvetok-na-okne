@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Host: http://cvetok-na-okne.ru
+Sitemap: http://cvetok-na-okne.ru/sitemap.xml

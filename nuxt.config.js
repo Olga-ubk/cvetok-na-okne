@@ -1,7 +1,7 @@
 module.exports = {
   modules: [
-    '@nuxtjs/markdownit',
-    '@nuxtjs/font-awesome'
+    '@nuxtjs/markdownit'
+    // '@nuxtjs/font-awesome'
     // 'bootstrap-vue/nuxt'
     // Or if you have custom bootstrap CSS...
     // ['bootstrap-vue/nuxt', { css: false }]
@@ -20,17 +20,15 @@ module.exports = {
   },
   generate: {
     routes: function () {
-      return require('fs').readdirSync('content/blog').map(function (file) {
-        return '/blog/' + require('slugify')(file.replace(/\.md$/, ''), {lower: true})
+      return require('fs').readdirSync('content/catalog').map(function (file) {
+        return '/catalog/' + require('slugify')(file.replace(/\.md$/, ''), {lower: true})
       })
     }
   },
   // TODO: Разобраться как вынести css в отдельный файл https://nuxtjs.org/examples/global-css/
-  /*
   css: [
-    '~/css/business-casual.css'
+    '~/css/style.css'
   ],
-  */
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {

@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+  .product-item-button {
+    width: 100%;
+    position: absolute;
+    bottom: -2rem;
+  }
+}

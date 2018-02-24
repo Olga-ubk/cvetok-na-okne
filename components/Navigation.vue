@@ -14,11 +14,11 @@
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="/blog/">Статьи</a>
+            <a class="nav-link text-uppercase text-expanded" href="/catalog/">Каталог</a>
           </li>
           <!--
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            <a class="nav-link text-uppercase text-expanded" href="/blog/">Статьи</a>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>

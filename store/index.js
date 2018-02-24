@@ -30,13 +30,13 @@ const makeStore = () => {
         // console.log('nuxtServerInit')
         if (process.server) {
           const fs = require('fs')
-          const files = fs.readdirSync('content/blog')
+          const files = fs.readdirSync('content/catalog')
           const posts = files.map((file) => {
-            let post = fm(fs.readFileSync(`content/blog/${file}`, 'utf8'))
+            let post = fm(fs.readFileSync(`content/catalog/${file}`, 'utf8'))
             post.filename = file
-            post.created = new Date(fs.statSync(`content/blog/${file}`).ctime)
+            post.created = new Date(fs.statSync(`content/catalog/${file}`).ctime)
             post.slug = slugify(file.replace(/\.md$/, ''), {lower: true})
-            post.url = `/blog/${post.slug}`
+            post.url = `/catalog/${post.slug}`
             return post
           })
           this.dispatch('loadPosts', posts)
